@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compétences - Stage SEGULA</title>
+  <meta name="description" content="Compétences techniques et humaines acquises pendant le stage, avec preuves, réalisations et impacts." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Mes Compétences Acquises</h1>
+    <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Mode sombre</button>
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt;
+        <a href="competence.html">Compétences</a>
+      </div>
+      <a href="index.html">À propos</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+  </header>
+
+  <main id="main" class="skills-section">
+    <h2>Mes compétences acquises lors du stage</h2>
+    <p class="intro">
+      Étudiant orienté Data/BI, j’aime transformer des données brutes en indicateurs utiles à la décision.
+      Niveau global : <strong>intermédiaire</strong> en Power BI & Python, avec une sensibilité produit (lisibilité, pertinence des KPI).
+    </p>
+
+    <h3>Compétences techniques</h3>
+    <div class="skills-container">
+      <div class="competence-card">
+        <img src="../icons/python.png" alt="Logo Python" loading="lazy">
+        <h4>Python / Machine Learning</h4>
+        <p>Modèle de classification sur données Excel réelles (features, métriques, sélection du modèle).</p>
+        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+      </div>
+      <div class="competence-card">
+        <img src="../icons/powerbi.png" alt="Logo Power BI" loading="lazy">
+        <h4>Power BI (Power Query & DAX)</h4>
+        <p>Modèle en étoile, mesures KPI (taux de conversion, cycle moyen), pages de synthèse métier.</p>
+        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+      </div>
+      <div class="competence-card">
+        <img src="../icons/github.png" alt="Logo GitHub" loading="lazy">
+        <h4>Git & GitHub</h4>
+        <p>Versionnage des scripts, branches simples, README et suivi des évolutions.</p>
+        <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+    </div>
+
+    <section class="styled-section">
+      <h3>Compétences techniques – preuves ciblées</h3>
+      <ul>
+        <li><strong>Power Query / DAX :</strong> normalisation d’Excel hétérogènes (typage, relations), mesures KPI et publication d’un dashboard fiable pour l’Avant-vente (<a href="projet.html#projet-1">voir Projet 1</a>).</li>
+        <li><strong>Python / Pandas :</strong> préparation des données (nettoyage, encodage, split train/test) pour un modèle “Go / No Go” (<a href="projet.html#projet-2">voir Projet 2</a>).</li>
+        <li><strong>Scikit-learn :</strong> entraînement & comparaison de modèles, lecture des métriques (accuracy/F1), choix argumenté.</li>
+        <li><strong>YOLO / Roboflow :</strong> annotation & entraînement pour détection de symboles électriques sur plans (<a href="projet.html#projet-3">voir Projet 3</a>).</li>
+      </ul>
+    </section>
+
+    <h3>Compétences humaines</h3>
+    <ul class="soft-skills">
+      <li><strong>Travail en équipe :</strong> échanges réguliers avec l’équipe IA et l’Avant-vente (recueil du besoin, itérations rapides).</li>
+      <li><strong>Résolution de problèmes :</strong> adaptation des données aux KPI attendus (règles de contrôle, mapping de colonnes).</li>
+      <li><strong>Autonomie :</strong> conduite d’un POC de bout en bout (collecte → modélisation → restitution).</li>
+      <li><strong>Communication :</strong> synthèse claire en réunion (objectifs, résultats, limites, prochaines étapes).</li>
+    </ul>
+
+    <h3>Outils & technologies utilisés</h3>
+    <div class="tools-container" aria-label="Outils et technologies">
+      <div><img src="../icons/python.png" alt="Python" loading="lazy"><p>Python</p></div>
+      <div><img src="../icons/powerbi.png" alt="Power BI" loading="lazy"><p>Power BI</p></div>
+      <div><img src="../icons/streamlit.png" alt="Streamlit" loading="lazy"><p>Streamlit (POC)</p></div>
+      <div><img src="../icons/github.png" alt="GitHub" loading="lazy"><p>GitHub</p></div>
+    </div>
+
+    <h3>Mes acquis professionnels</h3>
+    <div class="competence-sentence">✅ Je suis capable de <strong>présenter des résultats d’analyse</strong> en réunion projet.</div>
+    <div class="competence-sentence">✅ Je suis capable de <strong>concevoir un modèle prédictif</strong> sur des données Excel réelles.</div>
+    <div class="competence-sentence">✅ Je suis capable de <strong>automatiser un reporting</strong> via Python & Streamlit.</div>
+
+    <section class="styled-section">
+      <h3>Impacts et résultats</h3>
+      <ul>
+        <li>Accès plus simple rapide aux données d'avant ventes, meilleurs compréhension pour les personnes extérieur</li>
+        <li>Diminution des erreurs d’import ~30 % grâce à des contrôles simples (valeurs attendues).</li>
+        <li>Aide au chiffrage : premier score de probabilité “Go / No Go” pour prioriser les offres.</li>
+      </ul>
+    </section>
+
+    <h3>Captures de réalisations</h3>
+    <div class="carousel">
+      <img src="../icons/capture_powerbi.png" alt="Aperçu d’un dashboard Power BI (données floutées)" loading="lazy">
+      <img src="../icons/capture_streamlit.png" alt="Aperçu d’une interface Streamlit (démo POC)" loading="lazy">
+      <img src="../icons/capture_code.png" alt="Extrait de code Python illustratif (préparation des données)" loading="lazy">
+    </div>
+
+    <section class="styled-section">
+      <h3>Langues & liens</h3>
+      <p>Français (natif) – Anglais (intermédiaire, technique).</p>
+      <div class="center-btn" style="margin-top:18px">
+        <a class="btn" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">Mon LinkedIn</a>
+        <a class="btn" href="../pdf/CV_Theo_Delporte.pdf" target="_blank" rel="noopener">📄 Télécharger mon CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+</body>
+</html>

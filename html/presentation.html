@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Présentation de l'entreprise</title>
+  <meta name="description" content="Présentation de l'entreprise SEGULA Technologies et cadre du stage de Théo Delporte." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
+    document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const speed = 50;
+        const updateCount = () => {
+          const count = +counter.innerText;
+          const increment = Math.ceil(target / speed);
+          if (count < target) { counter.innerText = count + increment; setTimeout(updateCount, 50); }
+          else { counter.innerText = target; }
+        };
+        updateCount();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Présentation de l'entreprise</h1>
+
+    <div class="header-tools">
+      <div class="stats-banner">
+        <div class="stat-item">
+          <h3 class="counter" data-target="6">0</h3>
+          <p>Semaines de stage</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="4">0</h3>
+          <p>Projets réalisés</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="3">0</h3>
+          <p>Compétences clés</p>
+        </div>
+      </div>
+
+      <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Mode sombre</button>
+    </div>
+
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt;
+        <a href="presentation.html">Présentation</a>
+      </div>
+      <a href="index.html">À propos</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="styled-section" aria-labelledby="cadre-stage">
+      <h2 id="cadre-stage">Cadre du stage</h2>
+      <ul>
+        <li><strong>Entreprise :</strong> SEGULA Technologies – Site de Montoir-de-Bretagne</li>
+        <li><strong>Secteur :</strong> Ingénierie (énergie, aéronautique, naval…)</li>
+        <li><strong>Durée :</strong> 6 semaines – du 16 juin au 25 juillet 2025</li>
+        <li><strong>Tuteur :</strong> GARNIER Didier</li>
+        <li><strong>Rôle :</strong> Stagiaire Data/BI – analyse, modélisation, dashboards</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Présentation de l'entreprise SEGULA Technologies</h2>
+
+      <h3>1.1 Historique de l'entreprise</h3>
+      <p>Créée en 1985, SEGULA Technologies est une entreprise française spécialisée dans l'ingénierie. Dans les années 90, l'entreprise a consolidé sa présence en France avant de s'étendre à l'international dans les années 2000. Depuis 2010, SEGULA n'a cessé de diversifier ses activités et d'innover pour devenir un acteur majeur du secteur. Aujourd'hui, avec plus de 15 000 collaborateurs répartis dans plus de 30 pays, le groupe accompagne plus de 300 clients industriels dans des secteurs stratégiques. L'innovation est au cœur de sa stratégie, de la phase d'étude à la production industrielle.</p>
+
+      <h3>1.2 Activités principales</h3>
+      <p>SEGULA Technologies intervient dans de nombreux secteurs :</p>
+      <ul>
+        <li><strong>Aéronautique et Spatial :</strong> Conception de systèmes complexes et soutien à l'innovation technologique.</li>
+        <li><strong>Automobile :</strong> Développement des véhicules de demain avec les plus grands constructeurs.</li>
+        <li><strong>Énergie :</strong> Solutions innovantes pour la transition énergétique et la préservation de l'environnement.</li>
+        <li><strong>Ferroviaire :</strong> Optimisation des infrastructures et développement de technologies pour les transports.</li>
+        <li><strong>Naval :</strong> Conception et maintenance de navires en mettant l'accent sur l'innovation.</li>
+        <li><strong>Oil & Gas :</strong> Ingénierie pour l'exploration, la production et la distribution d'énergie.</li>
+        <li><strong>Pharmacie :</strong> Optimisation des procédés de production pour garantir la qualité des produits pharmaceutiques.</li>
+      </ul>
+
+      <h3>1.3 Le site SEGULA Technologies de Montoir-de-Bretagne</h3>
+      <p>Racheté en 2016, le site de Montoir-de-Bretagne (anciennement SECOMAT) joue un rôle clé au sein de SEGULA. Ce bureau d'études intervient dans les domaines de l'énergie, de l'aéronautique et du naval, en partenariat avec des grands comptes comme Airbus ou Total Energies. Le site se distingue par son expertise en automatisme et informatique industrielle.</p>
+
+      <h3>1.4 Organisation du Bureau d'Études</h3>
+      <p>L'organisation repose sur plusieurs pôles :</p>
+      <ul>
+        <li><strong>Direction de Pôle :</strong> Supervision des activités et des projets.</li>
+        <li><strong>Direction QHSE :</strong> Gestion de la Qualité, de l'Hygiène, de la Sécurité et de l'Environnement.</li>
+        <li><strong>Direction Technique :</strong> Développement et innovation technique.</li>
+        <li><strong>Direction Commerciale :</strong> Stratégies de vente et relations clients.</li>
+      </ul>
+
+      <p>Les métiers sont variés et couvrent :</p>
+      <ul>
+        <li>Avant-Vente et Chiffrage</li>
+        <li>Gestion de projets et achats</li>
+        <li>Inspection, réalisation et mise en service (Commissioning)</li>
+        <li>Électricité, instrumentation, automatisme et informatique industrielle</li>
+        <li>Génie civil, procédés, structure et tuyauterie</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+</body>
+</html>

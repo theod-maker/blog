@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets détaillés - Stage SEGULA</title>
+  <meta name="description" content="Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/projets.css" />
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Mes Projets de Stage</h1>
+    <button onclick="document.body.classList.toggle('dark-mode')" class="dark-mode-toggle">🌙 Mode sombre</button>
+    <nav>
+      <div id="breadcrumb" class="breadcrumb"></div>
+      <a href="index.html">À propos</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+  </header>
+
+  <main id="main" class="project-container">
+
+    <details class="project-item" id="projet-1">
+      <summary>Projet principal - Création d'un outils d'analyse des données commerciales</summary>
+      <div class="project-content">
+        <img src="../icons/power.png" alt="Analyse données" loading="lazy" />
+        <p>Ce projet à pour but de répondre à un besoins du service avant ventes. Toute les données classifier dans excel ne sont pas lié et difficillement exploitable et présentable. Mon sujet de stage à donc consister à développer un outils pour le suivi des performances des offres commerciales.<p>
+        <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. 
+        Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>
+        <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire, filter. 
+        <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.
+        Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retournet une ou plusieurs valeurs. DAX vous permet de créer des informations à partir des données qui se trouvent déja dans votre modèle.
+        </p>
+        </p> Voici quelque exemple de formule DAX, réalisé pendant ce stage:</p>
+        </p> Images à mettre :</p>
+        </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>
+        <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section "Données" à droite de l'espace de travail. J'ai donc en fonction des données demandées, </p>
+        <div class="stack">
+          <strong>Technos :</strong>
+          <span>Excel</span><span>Power BI</span><span>Python</span>
+        </div>
+      </div>
+    </details>
+
+
+    <details class="project-item" id="projet-3">
+      <summary>Projet IA d’annotation automatique</summary>
+      <div class="project-content">
+        <img src="../icons/roboflow.png" alt="Projet IA" loading="lazy" />
+        <p>Automatisation de la détection de symboles électriques sur des plans grâce à YOLO/Roboflow. Contributions : annotation, entraînement, analyse des erreurs. Ici c'est une participation à un des projet IA au sein de l'entreprise, réaliser par des alteranants. Mon but à moi était tous d'abords de réaliser des annotations sur les images qui servait à entrainer le modèle, ici des plant de schémas électrique pour le client TOTAL ENERGIES. J'ai donc réalisé cela à l'aide de ROBOFLOW. C'est en fait un logiciel de vision par ordinateur.</p>
+        </p>Voici quelque capture pour illustré cela</p>
+        </p>Ensuite cela était récupéré donc par les alterant sur service IA pour réentrainer le modèles grâce aux nouvelles annotations, pour atteindre plus de précision, aux alentours de 80% en moyenne.</p>
+        <div class="stack">
+          <strong>Technos :</strong>
+          <span>YOLO</span><span>Roboflow</span><span>Python</span>
+        </div>
+      </div>
+    </details>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const path = window.location.pathname.split("/").pop();
+      const breadcrumb = document.getElementById("breadcrumb");
+      const map = {
+        "index.html": "Accueil",
+        "presentation.html": "Présentation",
+        "missions.html": "Missions",
+        "bilan.html": "Bilan",
+        "contact.html": "Contact",
+        "competence.html": "Compétences",
+        "projet.html": "Projets",
+        "blog.html": "Blog"
+      };
+      if (map[path]) {
+        const trail = [`<a href="index.html">Accueil</a>`, map[path]];
+        breadcrumb.innerHTML = trail.join(" &gt; ");
+      }
+    });
+  </script>
+
+</body>
+</html>

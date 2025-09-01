@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mon Stage chez SEGULA Technologies</title>
+  <meta name="description" content="Contactez-moi pour toute question ou remarque à propos de mon blog de stage." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>function toggleDarkMode(){document.body.classList.toggle('dark-mode');}</script>
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Contactez-moi</h1>
+    <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Mode sombre</button>
+
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt;
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="index.html">À propos</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>Me contacter</h2>
+      <p>Pour toute question ou remarque, merci de remplir le formulaire ci-dessous. Vous serez redirigé vers une page de confirmation après l’envoi.</p>
+
+      <form action="https://formspree.io/f/movwoykz" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://theod-maker.github.io/merci.html">
+
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="_replyto" placeholder="Votre email" required autocomplete="email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message" required rows="6"></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div class="social-icons" aria-label="Liens sociaux">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="">
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="">
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+</body>
+</html>

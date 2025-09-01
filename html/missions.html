@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Missions - Mon Stage chez SEGULA Technologies</title>
+  <meta name="description" content="Missions de stage : analyse de données, modèle prédictif, IA Roboflow." />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>
+    function toggleDarkMode() { document.body.classList.toggle('dark-mode'); }
+    function toggleDetails(element) {
+      const details = element.querySelector('.mission-details');
+      if (details.style.maxHeight) { details.style.maxHeight = null; }
+      else { details.style.maxHeight = details.scrollHeight + "px"; }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const blocks = document.querySelectorAll('.mission-block');
+      blocks.forEach((block, i) => {
+        block.style.animationDelay = `${i * 0.2}s`;
+        block.classList.add('animate');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Mes Missions de Stage</h1>
+    <button type="button" class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Mode sombre</button>
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt;
+        <a href="missions.html">Missions</a>
+      </div>
+      <a href="index.html">À propos</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="competence.html">Compétences</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="missions-container">
+
+      <div class="mission-block" onclick="toggleDetails(this)">
+        <div class="mission-img-wrapper">
+          <img src="../icons/power.png" alt="Analyse de données" class="mission-img" loading="lazy">
+        </div>
+        <div class="mission-text">
+          <h3>Projet principal - Création d'un outils d'analyse des données commerciales</h3>
+          <p>Dans un but de compréhension et manipulation des bases de données pour mieux gérer les offres futures, et faire de meilleiurs prédiction.</p>
+          <div class="mission-details">
+            <p>J’ai mis en place un <strong>pipeline Power BI</strong> (Power Query + DAX), conçu des <strong>KPI</strong>, et automatisé la <strong>visualisation</strong> des données commerciales. Rôle : collecte, modélisation, restitution. Collaboration : avant-vente et direction commerciale.</p>
+            <a href="projet.html#projet-1" class="btn">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission-block" onclick="toggleDetails(this)">
+        <div class="mission-img-wrapper">
+          <img src="../icons/roboflow.png" alt="Projet IA" class="mission-img" loading="lazy">
+        </div>
+        <div class="mission-text">
+          <h3>Projet IA Roboflow</h3>
+          <p>Automatisation de l’annotation de plans techniques grâce à l’IA.</p>
+          <div class="mission-details">
+            <p>Entraînement d’un modèle <strong>YOLO</strong> pour détecter des symboles électriques sur des folios (Total Montoir). Rôle : annotation, entraînement, analyse d’erreurs et itérations.</p>
+            <a href="projet.html#projet-3" class="btn">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+</body>
+</html>
