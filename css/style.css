@@ -323,7 +323,7 @@ body.dark-mode nav a {
 
 .stats-banner {
   display: flex;
-  justify-content: center;       /* Centre horizontalement */
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-top: 20px;
@@ -495,7 +495,6 @@ body.dark-mode section img:hover {
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
 }
 
-/* Ajout pour fond sombre partout */
 body.dark-mode main {
   background: #121212;
 }
@@ -583,7 +582,6 @@ body.dark-mode .dark-mode-toggle:hover {
   }
 }
 
-/* Dark Mode adaptatif */
 body.dark-mode .mission-block {
   background: #1e1e1e;
   border: 1px solid #333;
@@ -613,13 +611,13 @@ body.dark-mode .mission-text p {
 }
 
 .mission-text {
-  max-width: 500px;     /* Pour éviter que le texte soit trop large */
+  max-width: 500px; 
   flex: 1;
   text-align: left;
 }
 
 .mission-block {
-  align-items: flex-start;   /* Permet au texte long de ne pas forcer l’image à s'étirer */
+  align-items: flex-start; 
   padding: 20px;
   border-radius: 15px;
   background: #fff;
@@ -630,8 +628,8 @@ body.dark-mode .mission-text p {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  max-width: 1200px;        /* Largeur max du contenu */
-  margin: 40px auto;         /* Centrage horizontal */
+  max-width: 1200px; 
+  margin: 40px auto;
   padding: 0 20px;
 }
 
@@ -658,7 +656,7 @@ body.dark-mode .mission-text p {
 }
 
 .mission-img-wrapper {
-  flex: 0 0 320px;  /* Taille plus stable et cohérente */
+  flex: 0 0 320px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,7 +820,6 @@ body.dark-mode .mission-details {
   transform: scale(1.2) rotate(3deg);
 }
 
-/* Dark Mode Adapté */
 body.dark-mode .skill-item {
   background: #1e1e1e;
 }
@@ -1188,3 +1185,60 @@ img[alt=""] { role: presentation; }
 .mt-1 { margin-top: .5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.image-grid img,
+.image-grid .mission-img {
+  width: 100% !important;     
+  max-width: 100% !important;  
+  height: auto;
+  display: block;              
+  margin: 0 !important;        
+  box-sizing: border-box;
+}
+
+.project-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-content,
+.project-item,
+.project-container {
+  overflow-x: visible;
+  box-sizing: border-box;
+}
+
+html, body, main {
+  overflow-x: hidden;
+}
+
+.project-content > img.mission-img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+  box-sizing: border-box; 
+  transform-origin: center center; 
+}
+
+.project-content {
+  overflow-x: hidden !important; 
+}
+
+.mission-img {
+  max-width: 100%;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.project-content > img.mission-img:hover {
+  transform: scale(1.02);
+}
