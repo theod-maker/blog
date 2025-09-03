@@ -15,15 +15,14 @@
     <h1>Mes Projets de Stage</h1>
     <button onclick="document.body.classList.toggle('dark-mode')" class="dark-mode-toggle">🌙 Mode sombre</button>
     <nav>
-      <div id="breadcrumb" class="breadcrumb"></div>
-      <a href="index.html">À propos</a>
+      <a href="index.html">Accueil</a>
       <a href="presentation.html">Entreprise</a>
-      <a href="missions.html">Missions</a> 
+      <a href="missions.html">Missions</a>
       <a href="projet.html">Projets</a>
       <a href="bilan.html">Bilan</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
       <a href="competence.html">Compétences</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -37,11 +36,11 @@
       <img src="../icons/Capture d’écran 2025-09-01 125417.png" alt="Python" class="mission-img" loading="lazy">
     </div>
 
-    <p>Exemple d'une des sources de données excels</p>
+    <figcaption>Aperçu d'une source de données</figcaption>
     <p>Pour cela il était donc nécessaire que je récupère les données, ici ce sera celle de l'année 2024. Ensuite j'ai du analyser les données, essayer déja moi même de les comprendes pour aussi avoir une meilleur visualisation, il y avait évidemment plusieurs sources de données. Egalement essayer d'étudier les liens potentiels entre elles pour la suite. 
     Une fois cette étape et compte tenu des données, j'ai décider d'importer ces données dans Power BI qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importer j'ai utiliser Power Query, déja intégré à Power BI pour mettre en forme les données, suprimé les valeurs null, ajuster les valeurs ou format de données correcte. En fait il permet de passer de données brute à des données beaucoup plus exploitatble par la suite dans power BI. Cela ma aussi permis de réaliser des liens entre les différentes source de données.<p>
     <img src="../icons/Capture d’écran 2025-09-01 130448.png" alt="Python" class="mission-img" loading="lazy">
-    <p>Aperçu de Power Query</p>
+    <figcaption>Power Query - utilisé pour la gestion des données</figcaption>
     <p>Lorsqu'ont ma présenté le projet, le service avant ventes attendais des KPI particulier pour explloiter des données précises. Une fois ce premier processus fait, j'ai commencer à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires où il restait encore certaines choses à extraire ou filter. 
     <p>C'est ici que va entrer en jeux le DAX, comme vous aller le voir, ça va être une partie importantes de mon projet de stage.
     Le DAX c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constatntes qui peuvent être utilisées dans une formule ou une expression, pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déja dans votre modèle.
@@ -51,18 +50,21 @@
       <img src="../icons/Capture d’écran 2025-09-01 120344.png" alt="Python" class="mission-img" loading="lazy">
       <img src="../icons/Capture d’écran 2025-09-01 120442.png" alt="Python" class="mission-img" loading="lazy">
       <img src="../icons/Capture d’écran 2025-09-01 120513.png" alt="Python" class="mission-img" loading="lazy">
+      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>
     </div>
 
     </p>En géneral je faisais une page pour un KPI que j'agrémmentais avec des tabelaux où encore des données qui me parraissait pertinantes, en plus des graphiques. Le défis sur cette partie à été de projeter la réalisation des KPI demandées sur la plateforme Power BI. La plus part était évidemment réalisable étant la large game proposé par Power BI.</p>
     <p> Les données se trouvent comme vous pouvez le voir sur les illustrations, dans la section "Données" à droite de l'espace de travail. J'ai donc en fonction des KPI demandées, pris les données qui me semblais utilie pour les intégrer à celui-ci. Voici par exemple le fonctionnement de ce premier graphique. </p>
 
     <img src="../icons/Capture d’écran 2025-09-01 131747.png" alt="Python" class="mission-img" loading="lazy">
+    <figcaption>Interface Power BI - utilisé pour réaliser les KPI's</figcaption>
 
     <p>Ensuite il y a des KPI ou je n'ai pas la données, ou elles sont tous simplement trop brute, aussi parfois il fallait la calculer à l'aide d'une autre données. Pour avoir un exemple concrets, voivi le graphique attendu et le KPI final, au vu des données que j'avais, j'ai utiliser du DAX, Les voicis: </p>
     <div class="image-grid">
       <img src="../icons/Capture d’écran 2025-09-01 120641.png" alt="Python" class="mission-img" loading="lazy">
       <img src="../icons/Capture d’écran 2025-09-01 120718.png" alt="Python" class="mission-img" loading="lazy">
       <img src="../icons/Capture d’écran 2025-09-01 132305.png" alt="Python" class="mission-img" loading="lazy">
+      <figcaption>KPI's attendu VS réalisé - à l'aide du DAX</figcaption>
     </div>
 
     <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport, vous pourrez trouver des captures ainsi que le lien télechargeable du rapport en bas de page. Ce projet est bien évidemment à continuer et ne demande que des améliorations, il est également possible de le déployer pour avoir une vu présentation grâce aux outils microsoft.</p>
@@ -75,12 +77,18 @@
 
 
     <details class="project-item" id="projet-3">
-      <summary>Projet IA d’annotation automatique</summary>
+      <summary>Projet secondaire -  IA d’annotation automatique</summary>
       <div class="project-content">
-        <img src="../icons/roboflow.png" alt="Projet IA" loading="lazy" />
-        <p>Automatisation de la détection de symboles électriques sur des plans grâce à YOLO/Roboflow. Contributions : annotation, entraînement, analyse des erreurs. Ici c'est une participation à un des projet IA au sein de l'entreprise, réaliser par des alteranants. Mon but à moi était tous d'abords de réaliser des annotations sur les images qui servait à entrainer le modèle, ici des plant de schémas électrique pour le client TOTAL ENERGIES. J'ai donc réalisé cela à l'aide de ROBOFLOW. C'est en fait un logiciel de vision par ordinateur.</p>
-        </p>Voici quelque capture pour illustré cela</p>
-        </p>Ensuite cela était récupéré donc par les alterant sur service IA pour réentrainer le modèles grâce aux nouvelles annotations, pour atteindre plus de précision, aux alentours de 80% en moyenne.</p>
+        <p>Quand je suis arrivé ici, d'autres étudiant IA travaillais déja sur un projet. Ce projet à pour but d'automatiser les annotations des schémas électrque par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entrainer le modèle et l'aider à comprendre ce qu'il devait repéré sur les schémas, nous avons donc utilisé le logiciel roboflow qui est un outils d'étiquetage d'image. </p>
+        <p>C'est un processus plutôt long, de réaliser cela sur les nombreux folio d'entrainement, donc j'ai apporté de l'aide sur la première semaine sur cette partie annotation. Puis une fois ce processuce réalisé, ils ont técupéré les données et ont pu entrainer le modèles et apportées les modifications nécessaires.</p>
+        <img src="../icons/Capture d’écran 2025-09-02 101820.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Aperçu de l'outils Roboflow</figcaption>
+        <img src="../icons/yolo_example.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Outils de détection yolo</figcaption>
+        <p>Pour passer les données dans le modèle, l'outils utilisé était YOLO, qui est un véritable détecteur d'objets. Il est courrament utilisé car il est simple à installer, puissant et rapide.<p>
+        </p>Une fois ces données passé dans le modèle nous avions le résulats dans un fichier excel, pour voir si cela fonctionnais et surtous voir la précisions, comparer à nos données d'annotations réeels, repérer les différentes erreur et les annotées dans un tableaux. Cela a permis au étudiants de corriger leurs erreurs par la suite</p>
+        <img src="../icons/roboflow.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Tableau de détection des erreur du modèle</figcaption>
         <div class="stack">
           <strong>Technos :</strong>
           <span>YOLO</span><span>Roboflow</span><span>Python</span>
@@ -96,24 +104,21 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const path = window.location.pathname.split("/").pop();
-      const breadcrumb = document.getElementById("breadcrumb");
-      const map = {
-        "index.html": "Accueil",
-        "presentation.html": "Présentation",
-        "missions.html": "Missions",
-        "bilan.html": "Bilan",
-        "contact.html": "Contact",
-        "competence.html": "Compétences",
-        "projet.html": "Projets",
-        "blog.html": "Blog"
-      };
-      if (map[path]) {
-        const trail = [`<a href="index.html">Accueil</a>`, map[path]];
-        breadcrumb.innerHTML = trail.join(" &gt; ");
-      }
-    });
-  </script>
+    const params = new URLSearchParams(window.location.search);
+    const projet = params.get("projet");
+
+    const projet1 = document.getElementById("projet-1");
+    const projet3 = document.getElementById("projet-3");
+
+    if (projet === "1") {
+      projet1.style.display = "block";
+      projet3.style.display = "none";
+    } else if (projet === "3") {
+      projet1.style.display = "none";
+      projet3.style.display = "block";
+    }
+  });
+ </script>
 
 </body>
 </html>

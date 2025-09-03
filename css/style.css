@@ -150,47 +150,6 @@ ul li:hover {
   color: #1d2f8b;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #2a46c0;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.social-icons a:hover {
-  transform: scale(1.15) rotate(5deg);
-  background-color: #1d2f8b;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-.social-icons img {
-  width: 60%;     
-  height: 60%;
-  max-width: 60%;
-  max-height: 60%;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
-  transform: scale(1.2);
-}
-
 
 footer {
   text-align: center;
@@ -222,6 +181,7 @@ footer a {
 }
 
 button, .btn {
+  align-items: center;
   background-color: #2a46c0;
   color: white;
   padding: 12px 30px;
@@ -233,6 +193,7 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
+  align-items: center;
   background-color: #1d2f8b;
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 6px 14px rgba(0,0,0,0.2);
@@ -1241,4 +1202,23 @@ html, body, main {
 
 .project-content > img.mission-img:hover {
   transform: scale(1.02);
+}
+
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  color: #2a46c0;
+}
+
+header {
+  background-image: url("../icons/implantations-segula-1-1.jpg");
+  background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat;  
+  color: white;                  
+  padding: 2rem;
 }
