@@ -64,6 +64,11 @@ nav a:hover {
   text-align: center;
 }
 
+.center-btn {
+  text-align: center;
+}
+
+
 .svgContainer {
   width: 100%;
   height: 100%;
