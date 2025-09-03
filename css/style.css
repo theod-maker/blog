@@ -46,6 +46,7 @@ nav a:hover {
 }
 
 .Btn {
+  margin-left: 60px;
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -57,6 +58,10 @@ nav a:hover {
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.mt-2{
+  text-align: center;
 }
 
 .svgContainer {
@@ -102,7 +107,7 @@ nav a:hover {
 } 
 
 main {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 3em auto;
   padding: 0 1em;
   animation: fadeInUp 1s ease;
@@ -1014,7 +1019,7 @@ body.dark-mode .competence-sentence {
 }
 
 .project-container {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 2em auto;
   padding: 1em;
 }
