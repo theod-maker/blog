@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Mon Stage chez SEGULA Technologies</title>
+  <meta name="description" content="Contactez-moi pour toute question ou remarque à propos de mon blog de stage." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Contactez-moi</h1>
+
+    <nav>
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a> &gt;
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="competence.html">Compétences</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>Me contacter</h2>
+      <p>Pour toute question ou remarque, merci de remplir le formulaire ci-dessous. Vous serez redirigé vers une page de confirmation après l’envoi.</p>
+
+      <form action="https://formspree.io/f/movwoykz" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://theod-maker.github.io/merci.html">
+
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="_replyto" placeholder="Votre email" required autocomplete="email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message" ></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+</body>
+</html>

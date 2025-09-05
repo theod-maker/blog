@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets détaillés - Stage SEGULA</title>
+  <meta name="description" content="Projets détaillés du stage : pipelines BI, modèle prédictif, IA Roboflow." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu</a>
+
+  <header>
+    <h1>Mes Projets de Stage</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Entreprise</a>
+      <a href="missions.html">Missions</a>
+      <a href="projet.html">Projets</a>
+      <a href="bilan.html">Bilan</a>
+      <a href="blog.html">Blog</a>
+      <a href="competence.html">Compétences</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="project-container">
+
+    <details class="project-item" id="projet-1">
+  <summary>Projet principal - Création d'un outil d'analyse des données commerciales</summary>
+  <div class="project-content">
+    <p>Ce projet a pour but de répondre à un besoin du service avant-ventes. Toutes les données classifiées dans Excel ne sont pas liées et difficilement exploitables et présentables. Mon sujet de stage a donc consisté à développer un outil pour le suivi des performances des offres commerciales.<p>
+    <div class="image-grid">
+      <img src="../icons/Capture d’écran 2025-09-01 125417.png" alt="Python" class="mission-img" loading="lazy">
+    </div>
+
+    <figcaption>Aperçu d'une source de données</figcaption>
+    <p>Pour cela, il était donc nécessaire que je récupère les données, ici ce seront celles de l'année 2024. Ensuite, j'ai dû analyser les données, essayer déjà moi-même de les comprendre pour aussi avoir une meilleure visualisation. Il y avait évidemment plusieurs sources de données. Également, essayer d'étudier les liens potentiels entre elles pour la suite.
+Une fois cette étape réalisée et compte tenu des données, j'ai décidé d'importer ces données dans Power BI, qui est un logiciel réputé pour les projets à traitement de données et qui facilite grandement leur exploitation. Une fois importées, j'ai utilisé Power Query, déjà intégré à Power BI, pour mettre en forme les données, supprimer les valeurs nulles, ajuster les valeurs ou formats de données corrects. En fait, il permet de passer de données brutes à des données beaucoup plus exploitables par la suite dans Power BI. Cela m'a aussi permis de réaliser des liens entre les différentes sources de données.<p>
+    <img src="../icons/Capture d’écran 2025-09-01 130448.png" alt="Python" class="mission-img" loading="lazy">
+    <figcaption>Power Query – utilisé pour la gestion des données</figcaption>
+    <p>Lorsqu'on m'a présenté le projet, le service avant-ventes attendait des KPI particuliers pour exploiter des données précises. Une fois ce premier processus fait, j'ai commencé à étudier la manière dont j'allais réaliser les graphiques, mais pour certains je n'avais pas les données nécessaires ou il restait encore certaines choses à extraire ou filtrer. 
+    <p>C'est ici que va entrer en jeu le DAX, comme vous allez le voir, ça va être une partie importante de mon projet de stage.
+Le DAX, c'est quoi ? C'est en fait une collection de fonctions, d'opérateurs et de constantes qui peuvent être utilisées dans une formule ou une expression pour calculer et retourner une ou plusieurs valeurs. Le DAX va vous permettre de créer des informations à partir des données qui se trouvent déjà dans votre modèle.
+
+    <div class="image-grid">
+      <img src="../icons/Capture d’écran 2025-09-01 120344.png" alt="Python" class="mission-img" loading="lazy">
+      <img src="../icons/Capture d’écran 2025-09-01 120442.png" alt="Python" class="mission-img" loading="lazy">
+      <img src="../icons/Capture d’écran 2025-09-01 120513.png" alt="Python" class="mission-img" loading="lazy">
+      <figcaption>Exemple de DAX - utilisé pour de nombreux KPI</figcaption>
+    </div>
+    <p> Les données se trouvent, comme vous pouvez le voir sur les illustrations, dans la section "Données" à droite de l'espace de travail. J'ai donc, en fonction des KPI demandés, pris les données qui me semblaient utiles pour les intégrer à celui-ci. Voici, par exemple, le fonctionnement de ce premier graphique. </p>
+
+    <img src="../icons/Capture d’écran 2025-09-01 131747.png" alt="Python" class="mission-img" loading="lazy">
+    <figcaption>Interface Power BI – utilisée pour réaliser les KPI</figcaption>
+
+    <p>Ensuite, il y a des KPI où je n'ai pas les données, ou elles sont tout simplement trop brutes. Aussi, parfois, il fallait les calculer à l'aide d'autres données. Pour avoir un exemple concret, voici le graphique attendu et le KPI final. Au vu des données que j'avais, j'ai utilisé du DAX. </p>
+    <div class="image-grid">
+      <img src="../icons/Capture d’écran 2025-09-01 120641.png" alt="Python" class="mission-img" loading="lazy">
+      <img src="../icons/Capture d’écran 2025-09-01 120718.png" alt="Python" class="mission-img" loading="lazy">
+      <img src="../icons/Capture d’écran 2025-09-01 132305.png" alt="Python" class="mission-img" loading="lazy">
+      <figcaption>KPI attendus VS réalisés – à l'aide du DAX</figcaption>
+    </div>
+
+    <p> J'ai donc réalisé cela pour tous les KPI et mis en forme le rapport. Vous pourrez trouver le lien téléchargeable du rapport juste ci-dessous. Évidemment, le projet ne demande que des améliorations et ajouts à l'avenir. On peut aussi l'utiliser en vue de présentation grâce aux outils Microsoft.<p>
+    
+    <div class="center-btn">
+      <a class="btn" href="../pdf/Projet_Power_BI.pbix" target="_blank">Mon Projet Power BI</a>
+    </div>
+
+      <div class="stack">
+      <strong>Technos :</strong>
+      <span>Excel</span><span>Power BI</span><span>Power Query</span><span>Python</span>
+    </div>
+  </div>
+</details>
+
+
+    <details class="project-item" id="projet-3">
+      <summary>Projet secondaire -  IA d’annotation automatique</summary>
+      <div class="project-content">
+        <p>Quand je suis arrivé ici, d'autres étudiants IA travaillaient déjà sur un projet. Ce projet a pour but d'automatiser les annotations des schémas électriques par l'IA. (Ici folio du client TOTAL ENERGIES). Il fallait entraîner le modèle et l'aider à comprendre ce qu'il devait repérer sur les schémas, nous avons donc utilisé le logiciel Roboflow qui est un outil d'étiquetage d'images. </p>
+        <p>C'est un processus plutôt long de réaliser cela sur les nombreux folios d'entraînement, donc j'ai apporté de l'aide la première semaine sur cette partie annotation. Puis, une fois ce processus réalisé, ils ont récupéré les données et ont pu entraîner le modèle et apporter les modifications nécessaires.</p>
+        <img src="../icons/Capture d’écran 2025-09-02 101820.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Aperçu de l'outils Roboflow</figcaption>
+        <img src="../icons/yolo_example.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Outils de détection YOLO</figcaption>
+        <p>Pour passer les données dans le modèle, l'outil utilisé était YOLO, qui est un véritable détecteur d'objets. Il est couramment utilisé car il est simple à installer, puissant et rapide.<p>
+        </p>Une fois ces données passées dans le modèle, nous avions les résultats dans un fichier Excel, pour voir si cela fonctionnait et surtout voir la précision, comparée à nos données d'annotations réelles, repérer les différentes erreurs et les annoter dans un tableau. Cela a permis aux étudiants de corriger leurs erreurs par la suite.</p>
+        <img src="../icons/roboflow.png" alt="Python" class="mission-img" loading="lazy">
+        <figcaption>Tableau de détection des erreur du modèle</figcaption>
+        <div class="stack">
+          <strong>Technos :</strong>
+          <span>YOLO</span><span>Roboflow</span><span>Python</span>
+        </div>
+      </div>
+    </details>
+
+  </main>
+
+  <footer>
+    <p>© 2025 - Théo Delporte</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const projet = params.get("projet");
+
+    const projet1 = document.getElementById("projet-1");
+    const projet3 = document.getElementById("projet-3");
+
+    if (projet === "1") {
+      projet1.style.display = "block";
+      projet3.style.display = "none";
+    } else if (projet === "3") {
+      projet1.style.display = "none";
+      projet3.style.display = "block";
+    }
+  });
+ </script>
+
+</body>
+</html>
