@@ -61,13 +61,18 @@ nav a:hover {
 }
 
 .mt-2{
+  margin-top: 30px;
   text-align: center;
 }
 
 .center-btn {
-  text-align: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
+.center-btn .btn {
+  margin: 5px;
+}
 
 .svgContainer {
   width: 100%;
@@ -1231,4 +1236,8 @@ header {
   background-repeat: no-repeat;  
   color: white;                  
   padding: 2rem;
+}
+
+.styled-section{
+  margin-top: 30px;
 }
