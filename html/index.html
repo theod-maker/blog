@@ -33,20 +33,34 @@
       <a href="bilan.html">Bilan</a>
       <a href="blog.html">Blog</a>
       <a href="competence.html">Compétences</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Remerciements</a>
     </nav>
   </header>
+  <div class="logo-box">
+  <img src="../icons/SEGULA_Technologies_logo.png" alt="Logo SEGULA Technologies">
+</div>
 
   <main id="main">
     <section class="styled-section">
       <h2>Qui suis-je ?</h2>
-      <p>Je m'appelle Théo Delporte, étudiant passionné par l'informatique, l’intelligence artificielle et les nouvelles technologies. Ce blog est le fruit de mon stage chez SEGULA Technologies.</p>
 
-      <p class="mt-2">
-        <a class="btn" href="https://www.linkedin.com/in/th%C3%A9o-undefined-a157b3309/" target="_blank" rel="noopener">Mon LinkedIn</a>
-        <a class="btn" href="https://github.com/theod-maker" target="_blank" rel="noopener"> Mon GitHub</a>
-        <a class="btn" href="../pdf/CV_Theo_Delporte.pdf" target="_blank">Télécharger mon CV</a>
-      </p>
+    <div class="profile-section">
+      <div class="profile-photo">
+        <img src="../icons/1757685450601.jpg" alt="Photo de Théo Delporte" loading="lazy">
+      </div>
+      <div class="profile-text">
+        <p>
+          Je m'appelle Théo Delporte, étudiant passionné par l'informatique,
+          l’intelligence artificielle et les nouvelles technologies. 
+          Ce blog est le fruit de mon stage chez SEGULA Technologies.
+        </p>
+        <p class="mt-2">
+          <a class="btn" href="https://www.linkedin.com/in/theodelporte/" target="_blank" rel="noopener">Mon LinkedIn</a>
+          <a class="btn" href="https://github.com/theod-maker" target="_blank" rel="noopener">Mon GitHub</a>
+          <a class="btn" href="../pdf/CV_Theo_Delporte.pdf" target="_blank">Télécharger mon CV</a>
+        </p>
+      </div>
+    </div>
 
       <h3>Ce que vous trouverez ici :</h3>
       <ul>
@@ -56,13 +70,36 @@
         <li>Un aperçu de mes compétences techniques et humaines</li>
         <li>Des billets réguliers sur mon apprentissage (<a class="btn" href="blog.html">voir les billets</a>)</li>
       </ul>
-
+<figure>
       <div class="carousel">
   <img src="../icons/yolo_example.png" alt="Exemple YOLO" loading="lazy">
   <img src="../icons/Capture d’écran 2025-09-01 092143.png" alt="Illustration stage 2" loading="lazy">
   <img src="../icons/roboflow.png" alt="Illustration stage 3" loading="lazy">
   </div>
   <figcaption>Aperçu des projets de stage</figcaption>
+  </figure>
+    </section>
+  </main>
+
+  <main id="main">
+    <section>
+      <h2>Me contacter</h2>
+      <p>Pour toute question ou remarque, merci de remplir le formulaire ci-dessous. Vous serez redirigé vers une page de confirmation après l’envoi.</p>
+
+      <form action="https://formspree.io/f/movwoykz" method="POST" class="contact-form">
+        <input type="hidden" name="_next" value="https://theod-maker.github.io/merci.html">
+
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="_replyto" placeholder="Votre email" required autocomplete="email">
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" placeholder="Votre message" ></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
     </section>
   </main>
 
